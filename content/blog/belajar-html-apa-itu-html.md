@@ -1,0 +1,30 @@
+---
+title: "Belajar HTML # 1 - Apa itu HTML ?"
+description: HTML merupakan bahasa markup untuk membuat halaman website.
+image: "cover.png"
+tags: [HTML]
+---
+
+# Belajar HTML #1: Pengertian HTML
+
+## Pengertian HTML
+
+**HTML(HyperText Markup Language)** adalah bahasa markup yang digunakan untuk membuat halaman website. **HTML** memungkinkan seorang developer untuk membuat paragraf, heading, dan table. **HTML** berguna untuk menyusun struktur dan tampilan website.
+
+Dalam membuat website, tidak hanya menggunakan HTML, tetapi ada bahasa lain yg menjadi pelengkap yaitu **CSS** dan **JavaScript**
+
+## Kegunaan HTML
+
+**HTML** berfungsi sebagai kerangka dasar dalam tampilan website. HTML berguna untuk :
+
+-  Membuat Heading atau judul website
+-  Membuar Paragraf
+-  Membuat List
+-  Membuat Tabel
+-  Membuat Formulir
+-  Menampilkan Gambar atau Vidio
+-  dan masih banyak lagi kegunaan HTML yang nanti akan kita pelajari
+
+Saat ini HTML sudah versi 5. **HTML 5** memiliki banyak fitur tambahan yang nanti kita pelajari.
+
+Mohon koreksi jika ada yang salah. Sekian dari saya Terima Kasih...

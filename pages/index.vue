@@ -1,33 +1,53 @@
 <script setup>
 useHead({
-   title: "Home - Nuxt 3 with Tailwind",
+   title: "ngobar",
+   meta: [{ name: "description", content: "This Website using Nuxt 3 and Tailwind CSS" }],
 });
+
+// const { data: blogs } = await useAsyncData("navigation", () => {
+//    return fetchContentNavigation(queryContent("/blog").where({}).findOne());
+// });
 </script>
 <template>
-   <main class="flex items-center justify-center flex-col h-screen">
-      <div class="flex flex-col items-center">
-         <a href="https://github.com/Rauliqbal/nuxt-tailwind" class="text-sm items-center inline-flex py-1 px-2 border border-gray-400 hover:border-green-500 bg-white hover:bg-gray-100 rounded-full">
-            <img class="w-6 rounded-full mr-1" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" />
-            Github Repository</a
+   <main>
+      <header class="bg-header bg-no-repeat bg-cover h-[50vh] md:h-[70vh] flex justify-center items-center relative">
+         <div class="absolute w-full h-full bg-black/40"></div>
+         <div class="z-10">
+            <h1 class="text-center text-4xl font-bold text-white">Untitled</h1>
+            <h2 class="text-center px-5 text-gray-300 tracking-wide leading-tight mt-4">Belajar Pemrograman Website & UI Design dengan tutorial yang mudah dipahami</h2>
+         </div>
+      </header>
+      <article class="container mt-8">
+         <ContentList
+            path="/blog"
+            :query="{
+               only: ['title', 'description', 'tags', '_path', 'image'],
+            }"
          >
-         <h1 class="text-4xl md:text-5xl font-semibold text-gray-600 text-center mt-4">Nuxt 3 with Tailwind CSS</h1>
-         <p class="text-lg text-gray-400 mt-8 text-center">This template will help you start developing<br />with Nuxt 3 and Tailwind CSS</p>
-         <div class="absolute inset-x-0 mt-[-240px] -z-10 transform-gpu overflow-hidden blur-3xl">
-            <div class="relative bg-green-300 blur-2xl h-40 max-w-[600px]"></div>
-         </div>
-         <div class="absolute right-0 -z-10 transform-gpu overflow-hidden blur-3xl">
-            <div class="relative bg-green-300 blur-2xl h-40 w-96"></div>
-         </div>
-      </div>
-      <div class="flex gap-8 mt-10">
-         <a href="https://nuxt.com/docs" class="bg-white py-3 px-6 border border-gray-400 flex items-center gap-4 font-medium text-lg rounded-lg hover:border-green-500 hover:bg-gray-100 transition-all">
-            <img class="w-10" src="https://nuxt.com/assets/design-kit/logo/icon-green.svg" alt="" />
-            Nuxt Docs
-         </a>
-         <a href="https://tailwindcss.com/" class="bg-white py-3 px-6 border border-gray-400 flex items-center gap-4 font-medium text-lg rounded-lg hover:border-green-500 hover:bg-gray-100 transition-all">
-            <img class="w-10" src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg" alt="" />
-            Tailwind Docs
-         </a>
-      </div>
+            <template v-slot="{ list }">
+               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <article v-for="article in list" :key="article._path">
+                     <NuxtLink :to="article._path">
+                        <div class="p-4 bg-white rounded-2xl shadow-md">
+                           <div class="rounded-xl overflow-hidden">
+                              <img :src="'/images/' + article.image" :alt="article.title" class="object-cover w-full h-full" />
+                           </div>
+                           <div class="mt-4">
+                              <h1 class="text-2xl font-semibold line-clamp-1">{{ article.title }}</h1>
+                              <ul class="flex gap-2 mt-2">
+                                 <li class="bg-gray-200 text-gray-600 px-3 py-1 rounded-md text-[12px] font-bold tracking-wide" v-for="(tag, n) in article.tags" :key="n">{{ tag }}</li>
+                              </ul>
+                              <p class="mt-4 text-gray-500">{{ article.description }}</p>
+                           </div>
+                        </div>
+                     </NuxtLink>
+                  </article>
+               </div>
+            </template>
+            <template #not-found>
+               <p class="text-lg text-center font-semibold">No articles found.</p>
+            </template>
+         </ContentList>
+      </article>
    </main>
 </template>

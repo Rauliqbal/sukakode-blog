@@ -6,7 +6,8 @@ useHead({
 
 <template>
    <Navbar />
-   <NuxtPage />
+   <NuxtPage class="pb-8" />
+   <Footer />
 </template>
 
 <style>
