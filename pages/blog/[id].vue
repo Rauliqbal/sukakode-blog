@@ -45,11 +45,11 @@ useHead({
                </li>
             </ul>
 
-            <ul class="list-disc pl-12">
+            <!-- <ul class="list-disc pl-12">
                <li class="py-1" v-for="article in data.article.body.toc.links[1].children" :key="article.id">
                   <a class="text-gray-500 font-semibold tracking-wide" :href="'#' + article.id">{{ article.text }}</a>
                </li>
-            </ul>
+            </ul> -->
          </div>
       </aside>
    </main>
