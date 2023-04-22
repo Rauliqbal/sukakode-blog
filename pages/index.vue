@@ -1,7 +1,7 @@
 <script setup>
 useHead({
-   title: "ngobar",
-   meta: [{ name: "description", content: "This Website using Nuxt 3 and Tailwind CSS" }],
+   title: "Suka Kode : Belajar Pemrograman Website dan UI Design",
+   meta: [{ name: "description", content: "Website Suka Kode, membahas tentang tutorial pemrograman website dan UI Design untuk pemula yang mudah dipahami" }],
 });
 
 // const { data: blogs } = await useAsyncData("navigation", () => {
@@ -32,12 +32,13 @@ useHead({
                            <div class="rounded-xl overflow-hidden">
                               <img :src="'/images/' + article.image" :alt="article.title" class="object-cover w-full h-full" />
                            </div>
-                           <div class="mt-4">
-                              <h1 class="text-2xl font-semibold line-clamp-1">{{ article.title }}</h1>
+                           <div class="mt-6">
                               <ul class="flex gap-2 mt-2">
-                                 <li class="bg-gray-200 text-gray-600 px-3 py-1 rounded-md text-[12px] font-bold tracking-wide" v-for="(tag, n) in article.tags" :key="n">{{ tag }}</li>
+                                 <li class="bg-gray-100 text-gray-400 px-3 py-1 rounded-md text-[12px] font-bold tracking-wide" v-for="(tag, n) in article.tags" :key="n">{{ tag }}</li>
                               </ul>
-                              <p class="mt-4 text-gray-500">{{ article.description }}</p>
+                              <h1 class="text-xl font-semibold line-clamp-1 mt-4">{{ article.title }}</h1>
+
+                              <p class="mt-4 text-gray-500 line-clamp-2 tracking-wide">{{ article.description }}</p>
                            </div>
                         </div>
                      </NuxtLink>
