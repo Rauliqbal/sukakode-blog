@@ -24,7 +24,7 @@ useHead({
       <section class="col-span-2 bg-white rounded-2xl p-4 shadow-md">
          <header class="border-b pb-12">
             <img class="max-h-96 w-full object-cover rounded-xl" :src="'/images/' + data.article.image" :alt="'Thumbnail' + data.article.title" />
-            <h1 class="text-3xl md:text-4xl font-bold mt-8">{{ data.article.title }}</h1>
+            <h1 class="text-2xl md:text-3xl font-bold mt-8">{{ data.article.title }}</h1>
             <ul class="flex gap-1 mt-4">
                <li class="bg-gray-100 text-gray-400 px-3 py-1 rounded-md text-[12px] font-bold tracking-wide" v-for="tag in data.article.tags" :key="tag.id">{{ tag }}</li>
             </ul>
@@ -56,8 +56,8 @@ useHead({
 </template>
 
 <style>
-article > h1 {
-   font-size: 32px !important;
+.prose h1 {
+   font-size: 28px !important;
 }
 
 article p img {
@@ -68,5 +68,34 @@ article p img {
 }
 .prose a {
    text-decoration: none !important;
+}
+
+.prose blockquote {
+   font-style: normal !important;
+}
+.prose blockquote p::before {
+   content: "";
+}
+
+.prose code {
+   font-size: 16px;
+}
+.prose code::before,
+code::after {
+   content: "" !important;
+}
+
+.prose table {
+   font-size: 16px;
+   border-width: 1px;
+}
+.prose table thead {
+   background-color: #f1f1f1;
+}
+.prose table tr th,
+.prose table tr td {
+   padding: 12px 16px;
+   border-width: 1px;
+   border-color: #d1d5db;
 }
 </style>
