@@ -25,7 +25,7 @@ useHead({
             }"
          >
             <template v-slot="{ list }">
-               <div class="flex flex-row-reverse flex-wrap">
+               <div class="flex flex-col-reverse md:flex-row-reverse flex-wrap">
                   <article class="w-full md:w-1/2 lg:w-1/3 py-3 md:p-3" v-for="article in list" :key="article._path">
                      <NuxtLink :to="article._path">
                         <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition duration-200 ease-out h-full">
