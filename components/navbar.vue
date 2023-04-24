@@ -1,10 +1,7 @@
 <script setup>
-// methods: {
-//    showHide();
-//    {
-//       document.getElementById("active").checked = false;
-//    }
-// }
+function showHide() {
+   document.getElementById("hamburger").checked = false;
+}
 </script>
 
 <template>
@@ -25,7 +22,7 @@
                <div class="peer-checked:translate-x-0 w-72 fixed top-0 right-0 bottom-0 translate-x-full transition duration-300 md:w-auto md:static md:translate-x-0 z-20 ease-out">
                   <div class="flex flex-col md:items-center md:flex-row h-full">
                      <ul class="bg-white flex px-7 pt-28 md:pb-0 pb-[38rem] space-y-8 md:px-0 md:space-y-0 flex-col md:flex-row md:space-x-12 md:pt-0">
-                        <li><NuxtLink class="capitalize font-josefin tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/">Home</NuxtLink></li>
+                        <li><NuxtLink @click="showHide" class="capitalize font-josefin tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/">Home</NuxtLink></li>
                      </ul>
                   </div>
                </div>
