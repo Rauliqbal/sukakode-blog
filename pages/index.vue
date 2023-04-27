@@ -9,7 +9,7 @@ useHead({
 // });
 </script>
 <template>
-   <main>
+   <main class="pt-20">
       <header class="bg-header bg-no-repeat bg-cover bg-center h-[50vh] flex justify-center items-center relative">
          <div class="absolute w-full h-full bg-black/40"></div>
          <div class="z-10">
@@ -30,7 +30,7 @@ useHead({
                      <NuxtLink :to="article._path">
                         <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition duration-200 ease-out h-full">
                            <div class="rounded-xl overflow-hidden">
-                              <img :src="'/images/' + article.image" :alt="article.title" class="object-cover w-full h-full" />
+                              <img :src="'/images/thumbnails/' + article.image" :alt="article.title" class="object-cover w-full h-full" />
                            </div>
                            <div class="mt-6">
                               <ul class="flex gap-2 mt-2">
