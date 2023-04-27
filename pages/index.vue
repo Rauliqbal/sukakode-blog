@@ -22,6 +22,7 @@ useHead({
             path="/blog"
             :query="{
                only: ['title', 'description', 'tags', '_path', 'image'],
+               sort: { title: 1 },
             }"
          >
             <template v-slot="{ list }">
