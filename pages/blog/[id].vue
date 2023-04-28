@@ -14,7 +14,8 @@ const { data } = await useAsyncData(`content-${path}`, async () => {
 useHead({
    title: data.value.article.title,
    meta: [
-      { name: "description", content: "data.value.article.description" },
+      { name: "description", content: data.value.article.description },
+      { name: "keywords", content: data.value.article.keywords },
       { hid: "og:image", property: "og:image", content: `/images/${data.value.article.image}` },
    ],
 });

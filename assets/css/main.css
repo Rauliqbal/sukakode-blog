@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer base {
+   * {
+      @apply scroll-m-28;
+   }
    html {
       @apply scroll-smooth;
    }

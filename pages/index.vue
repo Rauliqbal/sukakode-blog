@@ -1,12 +1,11 @@
 <script setup>
 useHead({
    title: "SukaKode - Belajar Pemrograman Website dan UI Design",
-   meta: [{ name: "description", content: "Website Suka Kode, membahas tentang tutorial pemrograman website dan UI Design untuk pemula yang mudah dipahami" }],
+   meta: [
+      { name: "keywords", content: "sukakode, belajar web, belajar html, belajar pemrograman web, belajar ui design, belajar figma, suka koding, rauliqbal" },
+      { name: "description", content: "Website SukaKode, membahas tentang tutorial pemrograman website dan UI Design untuk pemula yang mudah dipahami" },
+   ],
 });
-
-// const { data: blogs } = await useAsyncData("navigation", () => {
-//    return fetchContentNavigation(queryContent("/blog").where({}).findOne());
-// });
 </script>
 <template>
    <main class="pt-20">
