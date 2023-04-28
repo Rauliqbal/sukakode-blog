@@ -22,9 +22,9 @@ useHead({
 </script>
 <template>
    <main class="container grid grid-cols-1 md:grid-cols-3 gap-6 items-start pt-28">
-      <section class="col-span-2 bg-white rounded-2xl p-4 shadow-md">
+      <section class="col-span-2 bg-white rounded-2xl p-4 md:p-6 shadow-md">
          <header class="border-b pb-12">
-            <img class="max-h-96 w-full object-cover rounded-xl" :src="'/images/thumbnails/' + data.article.image" :alt="'Thumbnail ' + data.article.title" />
+            <img class="w-full object-cover rounded-xl" :src="'/images/thumbnails/' + data.article.image" :alt="'Thumbnail ' + data.article.title" />
             <h1 class="text-2xl md:text-3xl font-bold mt-8">{{ data.article.title }}</h1>
             <ul class="flex gap-1 mt-4">
                <li class="bg-gray-100 text-gray-400 px-3 py-1 rounded-md text-[12px] font-bold tracking-wide" v-for="tag in data.article.tags" :key="tag.id">{{ tag }}</li>
