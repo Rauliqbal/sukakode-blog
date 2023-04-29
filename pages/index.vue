@@ -21,12 +21,12 @@ useHead({
             path="/blog"
             :query="{
                only: ['title', 'description', 'tags', '_path', 'image'],
-               sort: { title: 1 },
+               sort: { date: -1 },
             }"
          >
             <template v-slot="{ list }">
-               <div class="flex flex-col-reverse md:flex-row-reverse flex-wrap">
-                  <article class="w-full md:w-1/2 lg:w-1/3 py-3 md:p-3" v-for="article in list" :key="article._path">
+               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <article v-for="article in list" :key="article._path">
                      <NuxtLink :to="article._path">
                         <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition duration-200 ease-out h-full">
                            <div class="rounded-xl overflow-hidden">
