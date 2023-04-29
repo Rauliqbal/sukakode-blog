@@ -21,7 +21,7 @@ useHead({
 });
 </script>
 <template>
-   <main class="container grid grid-cols-1 md:grid-cols-3 gap-6 items-start pt-28">
+   <main class="container grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
       <section class="col-span-2 bg-white rounded-2xl p-4 md:p-6 shadow-md">
          <header class="border-b pb-12">
             <img class="w-full object-cover rounded-xl" :src="'/images/thumbnails/' + data.article.image" :alt="'Thumbnail ' + data.article.title" />

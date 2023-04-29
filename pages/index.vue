@@ -8,8 +8,8 @@ useHead({
 });
 </script>
 <template>
-   <main class="pt-20">
-      <header class="bg-header bg-no-repeat bg-cover bg-center h-[50vh] flex justify-center items-center relative">
+   <main>
+      <header class="container rounded-2xl bg-header bg-no-repeat bg-cover bg-center h-[50vh] flex justify-center items-center relative overflow-hidden">
          <div class="absolute w-full h-full bg-black/40"></div>
          <div class="z-10">
             <h1 class="text-center text-4xl font-bold text-white">SukaKode</h1>
