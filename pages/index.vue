@@ -8,15 +8,15 @@ useHead({
 });
 </script>
 <template>
-   <main>
-      <header class="container rounded-2xl bg-header bg-no-repeat bg-cover bg-center h-[50vh] flex justify-center items-center relative overflow-hidden">
+   <main class="container">
+      <header class="rounded-2xl bg-header bg-no-repeat bg-cover bg-center h-[50vh] flex justify-center items-center relative overflow-hidden">
          <div class="absolute w-full h-full bg-black/40"></div>
          <div class="z-10">
             <h1 class="text-center text-4xl font-bold text-white">SukaKode</h1>
             <h2 class="text-center px-5 text-gray-300 tracking-wide leading-tight mt-4">Belajar Pemrograman Website & UI Design dengan tutorial yang mudah dipahami</h2>
          </div>
       </header>
-      <article class="container mt-8">
+      <article class="mt-8">
          <ContentList
             path="/blog"
             :query="{
