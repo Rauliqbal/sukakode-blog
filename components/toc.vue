@@ -27,7 +27,7 @@ const flattenLinks = (links) => {
    <nav class="p-4 rounded-2xl">
       <h5 class="text-xl font-bold">Daftar isi 🔥</h5>
       <hr class="mt-5" />
-      <ul class="list-disc pl-4 mt-4">
+      <ul class="mt-4">
          <!-- render each link with depth class -->
          <li v-for="link of flattenLinks(links)" :key="link.id" :class="`py-1 toc-link _${link.depth}`">
             <a :href="`#${link.id}`">

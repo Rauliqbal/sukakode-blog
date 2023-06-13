@@ -26,10 +26,18 @@ useHead({
          <section class="col-span-2 bg-white rounded-2xl p-4 md:p-6 shadow-md">
             <header class="border-b pb-12">
                <img class="w-full object-cover rounded-xl" :src="'/images/thumbnails/' + data.article.image" :alt="'Thumbnail ' + data.article.title" />
-               <h1 class="text-2xl md:text-3xl font-bold mt-8">{{ data.article.title }}</h1>
+               <h1 class="text-2xl md:text-4xl font-bold mt-8">{{ data.article.title }}</h1>
                <ul class="flex gap-1 mt-4">
                   <li class="bg-gray-100 text-gray-400 px-3 py-1 rounded-md text-[12px] font-bold tracking-wide" v-for="tag in data.article.tags" :key="tag.id">{{ tag }}</li>
                </ul>
+
+               <div class="flex justify-between items-center mt-6">
+                  <a href="https://rauliqbal.my.id" class="flex items-center gap-2">
+                     <img class="w-10" src="~/assets/images/profile.png" alt="Rauliqbal a Front-End Developer" />
+                     <span class="text-sm text-gray-500 font-medium hover:text-blue-500 transition">Rauliqbal</span></a
+                  >
+                  <span class="text-sm text-gray-500 font-medium">{{ data.article.date }}</span>
+               </div>
             </header>
 
             <article class="prose mt-8 max-w-full w-full m-auto">
@@ -49,7 +57,7 @@ useHead({
          />
 
          <h6 class="text-gray-500 font-medium tracking-wide mt-6">WRITTEN BY</h6>
-         <h2 class="font-semibold text-gray-900 text-3xl"><a class="hover:text-blue-500 hover:underline transition-all" href="https://rauliqbal.my.id" target="_blank">Rauliqbal</a></h2>
+         <h2 class="font-semibold text-gray-900 text-2xl md:text-3xl"><a class="hover:text-blue-500 hover:underline transition-all" href="https://rauliqbal.my.id" target="_blank">Rauliqbal</a></h2>
          <p class="text-gray-500 tracking-wide leading-tight max-w-xl text-center mt-4">Hi, I'm Front-End Developer based in Indonesia. I like to write articles related to Front-End Developer and UI Designer.</p>
          <div class="flex gap-4 mt-4">
             <a class="p-2 hover:bg-gray-300 transition-all duration-200 ease-out rounded-md" href="https://github.com/Rauliqbal" target="_blank">
@@ -94,10 +102,6 @@ useHead({
 </template>
 
 <style>
-.prose h1 {
-   font-size: 28px !important;
-}
-
 article p img {
    border-radius: 0.75rem;
    height: 100%;

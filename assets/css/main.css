@@ -13,3 +13,21 @@
       @apply bg-[#fafaff] font-poppins;
    }
 }
+
+@layer components {
+   .prose h1 {
+      @apply text-4xl font-semibold font-outfit;
+   }
+   .prose h2 a {
+      @apply text-3xl font-semibold font-outfit;
+   }
+   .prose p {
+      @apply text-base lg:text-lg tracking-wide leading-relaxed;
+   }
+}
+
+@layer utilities {
+   .btn-primary {
+      @apply py-3 px-6 inline-flex rounded-lg font-medium bg-blue-500 text-white hover:bg-blue-600 transition-all duration-200 ease-out;
+   }
+}

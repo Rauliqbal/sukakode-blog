@@ -23,6 +23,7 @@ function showHide() {
                   <div class="flex flex-col md:items-center md:flex-row h-full">
                      <ul class="bg-white flex px-7 pt-28 md:pb-0 pb-[38rem] space-y-8 md:px-0 md:space-y-0 flex-col md:flex-row md:space-x-12 md:pt-0">
                         <li><NuxtLink @click="showHide" class="capitalize font-josefin tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/">Home</NuxtLink></li>
+                        <li><NuxtLink @click="showHide" class="capitalize font-josefin tracking-wide hover:text-blue-500 transition ease-out duration-200 text-gray-800" to="/tutorial">Tutorial</NuxtLink></li>
                      </ul>
                   </div>
                </div>
