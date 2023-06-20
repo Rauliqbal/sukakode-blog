@@ -13,7 +13,7 @@ useHead({
          <div class="absolute w-full h-full bg-black/40"></div>
          <div class="z-10">
             <h1 class="text-center text-4xl font-bold text-white">SukaKode</h1>
-            <h2 class="text-center px-5 text-gray-300 tracking-wide leading-tight mt-4">Belajar Pemrograman Website & UI Design dengan tutorial yang mudah dipahami</h2>
+            <p class="text-center text-lg px-5 text-gray-300 tracking-wide leading-tight mt-4">Belajar Pemrograman Website & UI Design dengan tutorial yang mudah dipahami</p>
          </div>
       </header>
       <article class="mt-8">
@@ -21,7 +21,7 @@ useHead({
             path="/blog"
             :query="{
                only: ['title', 'description', 'tags', '_path', 'image'],
-               sort: { date: -1 },
+               sort: { id: -1 },
             }"
          >
             <template v-slot="{ list }">

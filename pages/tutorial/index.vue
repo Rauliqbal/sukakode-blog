@@ -55,7 +55,7 @@ const tutorial = [
                </div>
                <div class="order-first md:order-last relative p-10 flex items-center justify-center">
                   <img class="scale-[.70] absolute z-10" :src="'/images/' + tutor.image" alt="" />
-                  <img class="scale-90 blur-2xl opacity-30" :src="'/images/' + tutor.image" alt="" />
+                  <img class="scale-100 blur-2xl opacity-30" :src="'/images/' + tutor.image" alt="" />
                </div>
             </div>
          </SwiperSlide>

@@ -44,6 +44,7 @@ useHead({
                <ContentRenderer :value="data.article" />
             </article>
          </section>
+
          <aside class="col-span-2 md:col-span-1 sticky top-28 bg-white rounded-2xl shadow-md">
             <Toc :links="data.article.body.toc.links" />
          </aside>
@@ -108,9 +109,9 @@ article p img {
    width: 100%;
    object-fit: cover;
 }
-.prose a {
+/* .prose a {
    text-decoration: none !important;
-}
+} */
 
 .prose blockquote {
    font-style: normal !important;
