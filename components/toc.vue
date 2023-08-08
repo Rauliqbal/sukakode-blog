@@ -1,10 +1,6 @@
-<!-- ./components/Toc.vue -->
-
 <script setup>
-// define links prop
 defineProps(["links"]);
 
-// flatten TOC links nested arrays to one array
 const flattenLinks = (links) => {
    let _links = links
       .map((link) => {

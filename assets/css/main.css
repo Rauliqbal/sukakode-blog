@@ -31,3 +31,18 @@
       @apply py-3 px-6 inline-flex rounded-lg font-medium bg-blue-500 text-white hover:bg-blue-600 transition-all duration-200 ease-out;
    }
 }
+
+::-webkit-scrollbar {
+   width: 8px;
+   height: 8px;
+}
+::-webkit-scrollbar-track {
+   background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+   background: #888;
+   border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}

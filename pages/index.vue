@@ -27,21 +27,7 @@ useHead({
             <template v-slot="{ list }">
                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   <article v-for="article in list" :key="article._path">
-                     <NuxtLink :to="article._path">
-                        <div class="p-6 bg-white rounded-2xl shadow-md hover:shadow-lg transition duration-200 ease-out h-full">
-                           <div class="rounded-xl overflow-hidden">
-                              <img :src="'/images/thumbnails/' + article.image" :alt="article.title" class="object-cover w-full h-full" />
-                           </div>
-                           <div class="mt-6">
-                              <ul class="flex gap-2 mt-2">
-                                 <li class="bg-gray-100 text-gray-400 px-3 py-1 rounded-md text-[12px] font-bold tracking-wide" v-for="(tag, n) in article.tags" :key="n">{{ tag }}</li>
-                              </ul>
-                              <h1 class="text-xl font-semibold line-clamp-2 mt-4">{{ article.title }}</h1>
-
-                              <p class="mt-4 text-gray-500 line-clamp-2 tracking-wide">{{ article.description }}</p>
-                           </div>
-                        </div>
-                     </NuxtLink>
+                     <CardList :to="article._path" :title="article.title" :image="article.image" :tag="article.tag" :description="article.description" />
                   </article>
                </div>
             </template>

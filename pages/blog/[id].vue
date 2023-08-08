@@ -23,7 +23,7 @@ useHead({
 <template>
    <main>
       <div class="container grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
-         <section class="col-span-2 bg-white rounded-2xl p-4 md:p-6 shadow-md">
+         <section class="col-span-2 bg-white rounded-2xl p-4 md:p-10 shadow-md">
             <header class="border-b pb-12">
                <img class="w-full object-cover rounded-xl" :src="'/images/thumbnails/' + data.article.image" :alt="'Thumbnail ' + data.article.title" />
                <h1 class="text-2xl md:text-4xl font-bold mt-8">{{ data.article.title }}</h1>
@@ -50,6 +50,7 @@ useHead({
          </aside>
       </div>
       <hr class="my-16" />
+
       <div class="container flex justify-center items-center flex-col">
          <img
             class="w-24 rounded-full"
@@ -101,7 +102,6 @@ useHead({
       </div>
    </main>
 </template>
-
 <style>
 article p img {
    border-radius: 0.75rem;
@@ -115,13 +115,39 @@ article p img {
 
 .prose blockquote {
    font-style: normal !important;
+   background: #f8f8f8;
+   padding: 2px 12px;
+   border-radius: 8px;
+   border: 1px solid #4f79b8;
 }
 .prose blockquote p::before {
    content: "";
 }
+.prose blockquote a {
+   text-decoration: underline !important;
+}
+
+.prose p {
+   line-height: 1.625;
+}
 
 .prose code {
+   font-family: "JetBrains Mono", monospace;
+}
+
+.prose p code,
+.prose li code {
    font-size: 16px;
+   border-radius: 0.375rem;
+   border-width: 1px;
+   --tw-border-opacity: 1;
+   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+   --tw-bg-opacity: 1;
+   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   padding-top: 0.25rem;
+   padding-bottom: 0.25rem;
 }
 .prose code::before,
 code::after {

@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.4",
+    "nuxt-highlightjs": "^1.0.3",
     "nuxt-swiper": "^1.1.0"
   }
 }
