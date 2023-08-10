@@ -163,6 +163,15 @@ code::after {
    content: "" !important;
 }
 
+.prose-code {
+   background-color: #191b22 !important;
+   border-radius: 8px !important;
+}
+
+.line {
+   color: #adbac7 !important;
+}
+
 .prose table {
    font-size: 16px;
    border-width: 1px;
@@ -175,5 +184,9 @@ code::after {
    padding: 12px 16px;
    border-width: 1px;
    border-color: #d1d5db;
+}
+
+.copy-button {
+   background-color: #c2c2c2;
 }
 </style>

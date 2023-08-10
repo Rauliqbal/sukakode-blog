@@ -30,6 +30,13 @@ export default defineNuxtConfig({
    },
    modules: ["@nuxt/content", "nuxt-swiper", "nuxt-disqus"],
    extends: "@nuxt-themes/typography",
+   content: {
+      highlight: {
+         // Theme used in all color schemes.
+         theme: "github-dark-dimmed",
+         // OR
+      },
+   },
    disqus: {
       shortname: "sukakode-1",
    },
