@@ -104,7 +104,7 @@ useHead({
 </template>
 <style>
 article p img {
-   border-radius: 0.75rem;
+   border-radius: 0.75rem !important;
    height: 100%;
    width: 100%;
    object-fit: cover;
@@ -113,26 +113,33 @@ article p img {
    text-decoration: none !important;
 } */
 
-.prose blockquote {
+blockquote {
    font-style: normal !important;
-   background: #f8f8f8;
    padding: 2px 12px;
    border-radius: 8px;
-   border: 1px solid #4f79b8;
+   border: 1px solid #4f79b8 !important;
+   color: #1d1d1d !important;
+   background-color: #eff6ff;
 }
-.prose blockquote p::before {
-   content: "";
+blockquote p {
+   margin: 10px 12px !important;
 }
-.prose blockquote a {
-   text-decoration: underline !important;
+blockquote a {
+   color: #4f79b8 !important;
+   transition: 0.3s ease-in-out;
+}
+blockquote a:hover {
+   color: #2c599c !important;
 }
 
-.prose p {
-   line-height: 1.625;
+p,
+strong {
+   font-family: "Poppins", sans-serif !important;
+   line-height: 1.625 !important;
 }
 
-.prose code {
-   font-family: "JetBrains Mono", monospace;
+code {
+   font-family: "JetBrains Mono", monospace !important;
 }
 
 .prose p code,

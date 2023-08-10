@@ -4,7 +4,13 @@ export default defineNuxtConfig({
       head: {
          charset: "utf-8",
          viewport: "width=device-width, initial-scale=1",
-         link: [{ rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=JetBrains+Mono&family=Poppins:wght@400;500;600&display=swap" }],
+         link: [
+            {
+               rel: "stylesheet",
+               href: "https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=JetBrains+Mono&family=Poppins:wght@400;500;600&display=swap",
+            },
+         ],
+
          meta: [
             {
                name: "google-site-verification",
@@ -23,4 +29,13 @@ export default defineNuxtConfig({
       },
    },
    modules: ["@nuxt/content", "nuxt-swiper"],
+
+   extends: "@nuxt-themes/typography",
+   content: {
+      highlight: {
+         // Theme used in all color schemes.
+         theme: "github-light",
+         // OR
+      },
+   },
 });
