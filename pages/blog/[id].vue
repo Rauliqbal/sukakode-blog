@@ -40,7 +40,7 @@ useHead({
                </div>
             </header>
 
-            <article class="prose mt-8 max-w-full w-full m-auto">
+            <article class="prose mb-10 max-w-full w-full m-auto">
                <ContentRenderer :value="data.article" />
             </article>
 

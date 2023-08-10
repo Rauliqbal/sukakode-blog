@@ -13,7 +13,7 @@ useHead({
          <div class="bg-header opacity-20 w-full h-full absolute bg-[size:34px]"></div>
          <div class="absolute top-0 w-full h-full left-0 bg-gradient-to-b from-transparent to-[#fafaff]"></div>
          <div class="z-10">
-            <h1 class="text-center text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-violet-500 to-pink-500">SukaKode</h1>
+            <h1 class="text-center text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-violet-500 to-pink-500">SukaKode</h1>
             <p class="text-center text-lg px-5 text-slate-700 tracking-wide leading-tight mt-4">Belajar Pemrograman Website & UI Design dengan tutorial yang mudah dipahami</p>
          </div>
       </header>

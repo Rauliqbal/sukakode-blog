@@ -33,4 +33,5 @@ export default defineNuxtConfig({
    disqus: {
       shortname: "sukakode-1",
    },
+   plugins: [{ src: "~/plugins/vercel.js", mode: "client" }],
 });

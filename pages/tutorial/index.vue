@@ -32,7 +32,7 @@ const tutorial = [
 ];
 </script>
 <template>
-   <main class="container">
+   <main class="container pt-28">
       <Swiper
          :modules="[SwiperAutoplay, SwiperPagination]"
          :slides-per-view="1"

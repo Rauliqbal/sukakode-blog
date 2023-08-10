@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.4.4",
+    "@vercel/analytics": "^1.0.2",
     "nuxt-highlightjs": "^1.0.3",
     "nuxt-swiper": "^1.1.0"
   }
