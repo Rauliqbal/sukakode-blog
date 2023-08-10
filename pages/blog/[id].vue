@@ -43,6 +43,8 @@ useHead({
             <article class="prose mt-8 max-w-full w-full m-auto">
                <ContentRenderer :value="data.article" />
             </article>
+
+            <DisqusComments :identifier="'/blog/' + path" />
          </section>
 
          <aside class="col-span-2 md:col-span-1 sticky top-28 bg-white rounded-2xl shadow-md">

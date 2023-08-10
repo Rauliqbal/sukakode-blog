@@ -28,14 +28,9 @@ export default defineNuxtConfig({
          autoprefixer: {},
       },
    },
-   modules: ["@nuxt/content", "nuxt-swiper"],
-
+   modules: ["@nuxt/content", "nuxt-swiper", "nuxt-disqus"],
    extends: "@nuxt-themes/typography",
-   content: {
-      highlight: {
-         // Theme used in all color schemes.
-         theme: "github-light",
-         // OR
-      },
+   disqus: {
+      shortname: "sukakode-1",
    },
 });
