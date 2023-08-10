@@ -18,7 +18,7 @@ function showHide() {
                <label for="hamburger" class="relative peer-checked:hamburger z-30 block cursor-pointer md:hidden">
                   <span class="transition duration-200 inline-block w-7 focus:w-0 h-1 bg-black rounded-xl after:rounded-xl before:rounded-xl"></span>
                </label>
-               <div class="absolute inset-0 h-screen bg-gray-900/30 backdrop-blur-sm opacity-0 hidden peer-checked:opacity-100 peer-checked:block transition-all duration-300 md:peer-checked:hidden"></div>
+               <div @click="showHide" class="absolute inset-0 h-screen bg-gray-900/30 backdrop-blur-sm opacity-0 hidden peer-checked:opacity-100 peer-checked:block transition-all duration-300 md:peer-checked:hidden"></div>
                <div class="peer-checked:translate-x-0 w-72 fixed top-0 right-0 bottom-0 translate-x-full transition duration-300 md:w-auto md:static md:translate-x-0 z-20 ease-out">
                   <div class="flex flex-col md:items-center md:flex-row h-full">
                      <ul class="bg-white flex px-7 pt-28 md:pb-0 pb-[38rem] space-y-8 md:px-0 md:space-y-0 flex-col md:flex-row md:space-x-12 md:pt-0">
