@@ -14,7 +14,7 @@ module.exports = {
             },
          },
          backgroundImage: {
-            header: "url('https://images.unsplash.com/photo-1607743386760-88ac62b89b8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njl8fHByb2dyYW1pbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60')",
+            header: "url('/assets/images/bg-pattern.svg')",
          },
          fontFamily: {
             poppins: ["Poppins", "sans-serif"],

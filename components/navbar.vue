@@ -15,8 +15,8 @@ function showHide() {
             </div>
             <div class="flex items-center">
                <input type="checkbox" class="peer hidden" name="hamburger" id="hamburger" />
-               <label for="hamburger" class="peer-checked:hamburger z-30 p-4 block cursor-pointer md:hidden">
-                  <span class="transition duration-200 inline-block w-7 h-1 bg-black rounded-xl after:rounded-xl before:rounded-xl"></span>
+               <label for="hamburger" class="relative peer-checked:hamburger z-30 block cursor-pointer md:hidden">
+                  <span class="transition duration-200 inline-block w-7 focus:w-0 h-1 bg-black rounded-xl after:rounded-xl before:rounded-xl"></span>
                </label>
                <div class="absolute inset-0 h-screen bg-gray-900/30 backdrop-blur-sm opacity-0 hidden peer-checked:opacity-100 peer-checked:block transition-all duration-300 md:peer-checked:hidden"></div>
                <div class="peer-checked:translate-x-0 w-72 fixed top-0 right-0 bottom-0 translate-x-full transition duration-300 md:w-auto md:static md:translate-x-0 z-20 ease-out">
@@ -36,13 +36,14 @@ function showHide() {
 <style>
 #hamburger ~ label span::after,
 #hamburger ~ label span::before {
+   right: 0;
    background: #000;
    transition-delay: 0.2s, 0s;
    transition-duration: 0.1s;
    transition-property: margin, transform;
    content: "";
    position: absolute;
-   width: 28px;
+   width: 20px;
    height: 4px;
 }
 

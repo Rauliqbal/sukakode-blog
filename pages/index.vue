@@ -8,15 +8,16 @@ useHead({
 });
 </script>
 <template>
-   <main class="container">
-      <header class="rounded-2xl bg-header bg-no-repeat bg-cover bg-center h-[50vh] flex justify-center items-center relative overflow-hidden">
-         <div class="absolute w-full h-full bg-black/40"></div>
+   <main>
+      <header class="h-[50vh] flex justify-center items-center relative overflow-hidden">
+         <div class="bg-header opacity-20 w-full h-full absolute bg-[size:34px]"></div>
+         <div class="absolute top-0 w-full h-full left-0 bg-gradient-to-b from-transparent to-[#fafaff]"></div>
          <div class="z-10">
-            <h1 class="text-center text-4xl font-bold text-white">SukaKode</h1>
-            <p class="text-center text-lg px-5 text-gray-300 tracking-wide leading-tight mt-4">Belajar Pemrograman Website & UI Design dengan tutorial yang mudah dipahami</p>
+            <h1 class="text-center text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-violet-500 to-pink-500">SukaKode</h1>
+            <p class="text-center text-lg px-5 text-slate-700 tracking-wide leading-tight mt-4">Belajar Pemrograman Website & UI Design dengan tutorial yang mudah dipahami</p>
          </div>
       </header>
-      <article class="mt-8">
+      <article class="mt-8 container">
          <ContentList
             path="/blog"
             :query="{

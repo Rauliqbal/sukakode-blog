@@ -19,7 +19,7 @@ console.log(`
 
 <template>
    <Navbar />
-   <NuxtPage class="pb-20 pt-28" />
+   <NuxtPage class="pb-20 pt-20" />
    <Footer />
 </template>
 
