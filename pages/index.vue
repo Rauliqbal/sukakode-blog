@@ -4,8 +4,15 @@ useHead({
    meta: [
       { name: "keywords", content: "sukakode, belajar web, belajar html, belajar pemrograman web, belajar ui design, belajar figma, suka koding, rauliqbal" },
       { name: "description", content: "Website SukaKode, membahas tentang tutorial pemrograman website dan UI Design untuk pemula yang mudah dipahami" },
+      { property: "og:title", content: "SukaKode - Belajar Pemrograman Website dan UI Design" },
+      { property: "og:description", content: "Website SukaKode, membahas tentang tutorial pemrograman website dan UI Design untuk pemula yang mudah dipahami" },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://sukakode.vercel.app/" },
+      { property: "og:image", content: "https://sukakode.vercel.app/_nuxt/sukakode.649ca9ed.png" },
    ],
+   link: [{ rel: "canonical", href: "https://sukakode.vercel.app/" }],
 });
+s;
 </script>
 <template>
    <main>

@@ -11,7 +11,7 @@ defineProps({
    <NuxtLink :to="to">
       <div class="p-6 bg-white rounded-2xl transition duration-200 ease-out h-full border border-slate-200 hover:border-blue-200 hover:scale-[.98] hover:bg-blue-50 group">
          <div class="rounded-xl overflow-hidden">
-            <img :src="'/images/thumbnails/' + image" :alt="title" class="object-cover w-full h-full" />
+            <img :src="'/images/thumbnails/' + image" :alt="title" class="object-cover w-full h-full" loading="lazy" />
          </div>
          <div class="mt-6">
             <ul class="flex gap-2 mt-2">
