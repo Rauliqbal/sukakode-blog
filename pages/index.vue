@@ -12,7 +12,6 @@ useHead({
    ],
    link: [{ rel: "canonical", href: "https://sukakode.vercel.app/" }],
 });
-s;
 </script>
 <template>
    <main>
