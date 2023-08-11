@@ -160,8 +160,8 @@ code {
    background-color: rgb(249 250 251 / var(--tw-bg-opacity));
    padding-left: 0.5rem;
    padding-right: 0.5rem;
-   padding-top: 0.25rem;
-   padding-bottom: 0.25rem;
+   padding-top: 0.01rem;
+   padding-bottom: 0.01rem;
 }
 .prose code::before,
 code::after {
