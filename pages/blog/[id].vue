@@ -16,7 +16,12 @@ useHead({
    meta: [
       { name: "description", content: data.value.article.description },
       { name: "keywords", content: data.value.article.keywords },
-      { hid: "og:image", property: "og:image", content: `/images/${data.value.article.image}` },
+      { property: "og:image", content: `/images/${data.value.article.image}` },
+      { property: "og:title", content: data.value.article.title },
+      { property: "og:description", content: data.value.article.description },
+      { property: "og:type", content: "website" },
+      { property: "og:url", content: `https://sukakode.vercel.app${path}` },
+      { property: "og:image", content: `/images/${data.value.article.image}` },
    ],
 });
 </script>
