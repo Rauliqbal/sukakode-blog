@@ -21,7 +21,7 @@ useHead({
       { property: "og:description", content: data.value.article.description },
       { property: "og:type", content: "website" },
       { property: "og:url", content: `https://sukakode.vercel.app${path}` },
-      { property: "og:image", content: `/images/${data.value.article.image}` },
+      { property: "og:image", content: `/images/thumbnails/${data.value.article.image}` },
    ],
 });
 </script>

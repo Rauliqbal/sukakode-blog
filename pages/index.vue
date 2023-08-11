@@ -8,7 +8,7 @@ useHead({
       { property: "og:description", content: "Website SukaKode, membahas tentang tutorial pemrograman website dan UI Design untuk pemula yang mudah dipahami" },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://sukakode.vercel.app/" },
-      { property: "og:image", content: "~/assets/images/social.jpg" },
+      { property: "og:image", content: "/images/social.jpg" },
    ],
    link: [{ rel: "canonical", href: "https://sukakode.vercel.app/" }],
 });
